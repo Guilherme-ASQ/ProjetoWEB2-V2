@@ -1,4 +1,4 @@
-<DOCTYPE HTML!>
+<!DOCTYPE HTML!>
 <HTML>
     <HEAD>
         <TITLE>Projeto web 2</TITLE>
@@ -98,7 +98,7 @@
         <!--CODIGO EM php-->
         <?php
         //Verifica se o formulário
-        if ($_SERVER["REQUEST"] == "POST"){
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
             //Recebe o email enviado pelo formulário
             $email = $_POST["email"];
 
