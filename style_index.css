@@ -1,0 +1,134 @@
+/*Classe CSS pra DIV principal onde fica o código todo.
+Assim fica tudo centralizado.
+*/
+.Principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Classe CSS pro card falando sobre mim.*/
+.card{
+    background-color: lightgray;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+    /*box-shadow: 5px 8px*/
+}
+
+.card-header{
+    border-radius: 15px 15px 0 0;
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body{
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.card-footer{
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    background-color: lightgray;
+    color: black;
+}
+
+/*Classe CSS pra mudar a foto de perfil*/
+.profile-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 4px 4px 2px black;
+}
+
+/*Classe CSS pra deixar o texto falando sobre mim com alinhamento.*/
+.text-justify{
+    text-align: justify;
+}
+
+/*CSS DO ACORDEÃO*/
+.accordion{
+    width: 300px;
+    margin: 0 auto;
+}
+
+/*Estilizando o container do DETAILS dentro do acordeão.*/
+details{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Estilizando o título (summary) */
+summary {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+/* Adicionando um ícone personalizado */
+summary::after {
+    content: '+';
+    font-size: 1.2rem;
+}
+    
+details[open] summary::after {
+    content: '-';
+}
+
+/* Conteúdo interno */
+.conteudo {
+    padding: 15px;
+    line-height: 1.6;
+    border-top: 1px solid #eee;
+    background-color: lightgray;
+}
+
+/*CLASSE CSS 'NOVA' PRA IMAGEM DO TCC*/
+.center-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 4px 4px 2px black;
+    /*Usar o flexbox pra centralizar a imagem*/
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+/*CLASSE CSS PRA CENTRALIZAR AS COISAS USANDO O FLEXBOX*/
+.alinhar-centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*CLASSE CSS DO FORMULARIO*/
+.formszinho{
+    /*background-color: lightblue;*/
+    text-align: center;
+    color: black;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+/*DEIXAR A TAG textarea COM TAMANHO FIXO*/
+.accordion textarea{
+    width: 100%;
+    box-sizing: border-box;/* Garante que margens e preenchimentos não ultrapassem o limite */
+    resize: none;/*Faz a tag textarea NÃO poder ser redimensionada.*/
+    /*width: 300px;/*Largura fixa. Tentar deixar a mesma largura do cartao.*/
+}
